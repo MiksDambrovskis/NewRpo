@@ -12,7 +12,7 @@ stage ('Build') {
     
    }
     stage('Build Maven Image') {
-        docker.build("maven-build") 
+        sudo docker.build("maven-build") 
         }
    
    stage('Run Maven Container') {
