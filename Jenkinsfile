@@ -3,8 +3,8 @@ stage ('Build') {
 
     stage('Initialize') {
         // Get some code from a GitHub repository
-           def dockerHome = tool '321'
-        def mavenHome  = tool 'Docker'
+           def dockerHome = tool 'Docker_blue'
+        def mavenHome  = tool 'Maven_blue'
         env.PATH = "${dockerHome}/bin:${mavenHome}/bin:${env.PATH}"
     }
     stage('Clone Repository') {
